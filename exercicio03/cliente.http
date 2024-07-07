@@ -1,0 +1,25 @@
+
+###
+POST http://localhost:8080/posts
+Content-Type: application/json
+
+{
+    "title": "First Post"
+}
+###
+
+GET http://localhost:8080/posts
+Accept: application/json
+
+###
+
+POST http://localhost:8080/posts/1/comments
+Content-Type: application/json
+
+{
+    "review": "This is a comment"
+}
+###
+
+DELETE http://localhost:8080/posts/1/comments/1
+Accept: application/json
